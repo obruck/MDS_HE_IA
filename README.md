@@ -29,9 +29,9 @@ This repository included scripts to
 Scripts have been by Oscar Brück.
 
 
-Oscar Brück, MD
-Hematology Research Unit Helsinki, University of Helsinki &
-Data Admnistration, Helsinki University Hospital &
-Hematology, Helsinki University Hospital
-Helsinki Finland
+Oscar Brück, MD  
+Hematology Research Unit Helsinki, University of Helsinki &  
+Data Admnistration, Helsinki University Hospital &  
+Hematology, Helsinki University Hospital  
+Helsinki Finland  
 oscar.bruck@helsinki.fi
