@@ -25,8 +25,12 @@ This repository included scripts to
 4. generate AUC of prediction model ROCs and plot AUC data + generate most representative images for each prediction models to assess models (R)
 5. combine tile-level prediction models with pixel-level and cell-level image analysis data (R)
 
+Hardware
+- Steps 1, 4 and 5 have been analyzed with a MacBook Pro 2018 (macOS Mojave, 16 GB 2133 MHz LPDDR3, 2.3 GHz Intel Core i5)
+- Steps 2 and 3 were analyzed in a Linux kernel (CentOS Linux 7, 4 Cores/20 GB)
 
-Scripts have been by Oscar Brück.
+
+Scripts have been written and implemented by Oscar Brück.
 
 
 Oscar Brück, MD  
