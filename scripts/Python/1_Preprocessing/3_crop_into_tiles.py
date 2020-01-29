@@ -19,8 +19,8 @@ import imageio
 
 
 # Define parameters
-input_directory = "DEFINE WHERE YOUR H&E IMAGES ARE LOCATED"
-output_directory = 'DEFINE WHERE YOU WANT THE MODIFIED H&E IMAGES TO BE EXPORTED'
+input_directory = "/data/images/2_preprocessed_tma_grayscale/"
+output_directory = '/data/images/3_preprocessed_tiles_grayscale/'
 num_tiles = 500
 
 # Slice images
@@ -48,28 +48,3 @@ for filename in os.listdir(output_directory):
     else:
         pass
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Module help
-## Which modules are available in library cv2
-help(cv2)
-
-## Inspect one module
-import types
-print([getattr(cv2, a) for a in dir(cv2)
-  if isinstance(getattr(cv2, a), types.FunctionType)])
-
-## Inspect one module    
-from inspect import getmembers, isfunction
-functions_list = [o for o in getmembers(cv2) if isfunction(o[1])]

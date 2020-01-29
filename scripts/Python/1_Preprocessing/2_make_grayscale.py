@@ -15,8 +15,8 @@ import cv2
 
 
 # Define parameters
-input_directory = "DEFINE WHERE YOUR H&E IMAGES ARE LOCATED"
-output_directory = 'DEFINE WHERE YOU WANT THE GRAYSCALED H&E IMAGES TO BE EXPORTED'
+input_directory = "/data/images/1_preprocessed_tma_color/"
+output_directory = "/data/images/2_preprocessed_tma_grayscale/"
 
 
 # Convert colors

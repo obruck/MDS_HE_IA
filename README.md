@@ -24,6 +24,9 @@ This repository included scripts to
 3. build elastic net models (R)
 4. generate AUC of prediction model ROCs and plot AUC data + generate most representative images for each prediction models to assess models (R)
 5. combine tile-level prediction models with pixel-level and cell-level image analysis data (R)
+6. make oncoprints and correlate mutation VAFs with predicted mutation label (Yes, No)
+7. to run unsupervised analyses on visual feature matrices using UMAP and PCA and cluster these with Kmeans and Phenograph. Clusters are compared to each others and results visualized with balloonplots.
+
 
 Hardware
 - Steps 1, 4 and 5 have been analyzed with a MacBook Pro 2018 (macOS Mojave, 16 GB 2133 MHz LPDDR3, 2.3 GHz Intel Core i5)

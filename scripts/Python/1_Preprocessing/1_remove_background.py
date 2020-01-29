@@ -15,8 +15,8 @@ import numpy as np
 from skimage import util
 
 # Define parameters
-input_directory = "DEFINE WHERE YOUR H&E IMAGES ARE LOCATED"
-output_directory = 'DEFINE WHERE YOU WANT THE MODIFIED H&E IMAGES TO BE EXPORTED'
+input_directory = "/data/images/0_raw/"
+output_directory = '/data/images/1_preprocessed_tma_color/'
 
 # Remove background
 for filename in os.listdir(input_directory):
