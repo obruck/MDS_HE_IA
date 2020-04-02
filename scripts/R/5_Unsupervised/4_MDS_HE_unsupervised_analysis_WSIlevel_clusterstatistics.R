@@ -327,7 +327,7 @@ for (dg_list in dg_list1) {
         
         ## Calculate FC and -log10 P value
         df <- df %>%
-          mutate(FC = median1 / median2) %>%
+          mutate(FC = ifelse(median1 == 0 & median2 == 0, 1, ifelse(median1 == 0, 1/median2, ifelse(median2 == 0, median1, median1 / median2)))) %>%
           mutate(
             neg_log10_p = -log10(pvalue),
             neg_log10_p_adj = -log10(p_adjusted),
@@ -341,25 +341,6 @@ for (dg_list in dg_list1) {
                                               ifelse(pvalue<0.1, 0.1, "ns")))),
             FC_log = log(FC) )
         
-        
-        # Balloonplot
-        p <- ggballoonplot(df, x = "clusternumber", y = "variable",
-                           fill = "FC_log",
-                           size = "neg_log10_p_adj",
-                           size.range = c(1, 10),
-                           ggtheme = theme_bw()) +
-          # scale_fill_viridis_c(option = "C") +
-          gradient_fill(c("blue", "white", "red")) +
-          guides(size = guide_legend(title="-log10(adjusted P value)"),
-                 fill = guide_colorbar(title="Log10 fold change")) +
-          font("xy.text", size = 10, color = "black", face="plain")
-        # p
-        
-        # Export plot
-        print("Export plot")
-        png(paste0("PCA_and_UMAP/Xception/Statistics/Balloonplot_continuous_", clustering1, "_variables.png"), width = 6, height = 8, units = 'in', res = 300)
-        print(p)
-        dev.off()
         
       }
     }

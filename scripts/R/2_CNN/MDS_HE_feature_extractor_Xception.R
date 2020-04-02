@@ -1,4 +1,4 @@
-# Created: 03.01.2020, OB
+# Created: 03.03.2019, OB
 
 # Script to extract visual features with the Xception network
 

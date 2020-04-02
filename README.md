@@ -10,7 +10,7 @@ Visual features from the CNNs were fed into several elastic net model with prede
 - diagnosis (between MDS and MDS/MPN)
 - mutation status for TP53, ASXL1, DNMT3A, SRSF2, TET2, RUNX1, SF3B1, NRAS/KRAS, IDH1/IDH2, STAG2
 - mutations in cell cycle, cell differentiation, DNA chromatin structurea and spliceosome regulation pathways
-- chromosome 3, 5q, 7q, 7, 8, 20q, complex karyotype
+- aberrant karyotype, chromosome 5q deletion, 7q deletion, 7 monosomy, 8 trisomy, 20q deletion, complex karyotype
 - patient age and gender
 - de novo vs. secondary MDS
 - ipssr score and ipssr cytopenia score
@@ -22,10 +22,8 @@ This repository included scripts to
 1. preprocess image data (Python)
 2. extract visual features (R)
 3. build elastic net models (R)
-4. generate AUC of prediction model ROCs and plot AUC data + generate most representative images for each prediction models to assess models (R)
-5. combine tile-level prediction models with pixel-level and cell-level image analysis data (R)
-6. make oncoprints and correlate mutation VAFs with predicted mutation label (R)
-7. to run unsupervised analyses on visual feature matrices using UMAP and PCA and cluster these with Kmeans and Phenograph. Clusters are compared to each others and results visualized with balloonplots (R)
+4. generate AUC of prediction model ROCs and plot AUC data + generate most representative images for each prediction models to assess models + combine tile-level prediction models with pixel-level and cell-level image analysis data (R)
+5. to run unsupervised analyses on visual feature matrices using UMAP and PCA and cluster these with Kmeans and Phenograph. Clusters are compared to each others with wilcoxon test (continuous variables) or chi2 test (categorical variables) (R)
 
 
 Hardware
@@ -40,5 +38,4 @@ Oscar Brück, MD
 Hematology Research Unit Helsinki, University of Helsinki &  
 Data Admnistration, Helsinki University Hospital &  
 Hematology, Helsinki University Hospital  
-Helsinki Finland  
-oscar.bruck@helsinki.fi
+Helsinki, Finland
