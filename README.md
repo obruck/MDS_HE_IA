@@ -14,7 +14,8 @@ Visual features from the CNNs were fed into several elastic net model with prede
 - patient age and gender
 - de novo vs. secondary MDS
 - ipssr score and ipssr cytopenia score
-Only visual features from MDS patients were included for these analyses except for diagnosis prediction were also MDS/MPN patients included.
+
+Only visual features from MDS patients were included for these analyses except for diagnosis prediction where also MDS/MPN patients included.
 
 As visual features from the Xception network performed superiorly to VGG16, we used these features to analyze the natural embedding of MDS, MDS/MPN and control subjects in an unsupervised fashion. For this purpose, we used PCA and UMAP and clustered data with Phenograph and Kmeans clustering. Due to the non-parametric nature of visual data, we observed UMAP and Kmeans to perform more accurately than other combinations.
 
