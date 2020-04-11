@@ -17,7 +17,7 @@ Visual features from the CNNs were fed into several elastic net model with prede
 
 Only visual features from MDS patients were included for these analyses except for diagnosis prediction where also MDS/MPN patients included.
 
-As visual features from the Xception network performed superiorly to VGG16, we used these features to analyze the natural embedding of MDS, MDS/MPN and control subjects in an unsupervised fashion. For this purpose, we used PCA and UMAP and clustered data with Phenograph and Kmeans clustering. Due to the non-parametric nature of visual data, we observed UMAP and Kmeans to perform more accurately than other combinations.
+As visual features from the Xception network performed superiorly to VGG16, we used these features to analyze the natural embedding of MDS, MDS/MPN and control subjects in an unsupervised fashion. For this purpose, we used PCA and UMAP and clustered data with Phenograph and Kmeans clustering. Due to the non-parametric nature of visual data, we observed UMAP to perform more accurately. As tile-level and aggregated sample-level analyses differ both by matrix size and by purpose, we used Phenograph for tile-level feature inspection to increase granularity and k-means for sample-level analyses to to facilitate robust conclusions.
 
 This repository included scripts to
 1. preprocess image data (Python)
